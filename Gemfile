@@ -68,3 +68,4 @@ end
 gem 'bootstrap'
 gem 'jquery-rails'
 gem 'simple_form'
+gem 'devise'
