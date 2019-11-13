@@ -1,4 +1,4 @@
-cclass GramsController < ApplicationController
+class GramsController < ApplicationController
 
   before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
 
@@ -111,5 +111,4 @@ cclass GramsController < ApplicationController
     params.require(:gram).permit(:message, :picture)
 
   end
-
 end
