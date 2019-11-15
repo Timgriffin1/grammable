@@ -1,6 +1,7 @@
 class GramsController < ApplicationController
 
   before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
+  skip_before_action :verify_authenticity_token
 
 
 
